@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    // &__play{
+    //     float: left;
+    // }
+    &__search{
+        padding-left: 1200px;
+        input {
+            padding: 10px 60px 10px 10px ;
+            border: 1px solid #E5E5E5;
+            outline: none;
+        }
+        img{
+            margin-left: 20px;
+        }
+    }
+}

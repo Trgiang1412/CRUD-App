@@ -1,0 +1,12 @@
+.main {
+    height: 100vh;
+    display: flex;
+    &__menu{
+        height: 100%;
+        flex: 0 1 15%;
+        background-color: #F2EAE1;
+    }
+    &__dasboard{
+        flex: 3;
+    }
+}
