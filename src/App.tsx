@@ -8,8 +8,8 @@ function App() {
   const navigate = useNavigate();
   return (
     <Routes>
-      <Route path="/menu" element={<Main />} />
-      <Route path="/students" element={<Main />} />
+      <Route path="/home" element={<Main tab={1}/>} />
+      <Route path="/students" element={<Main tab={2}/>} />
       <Route path="/login" element={<Login />} />
     </Routes>
   )

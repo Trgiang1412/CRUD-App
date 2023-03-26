@@ -9,6 +9,7 @@ import avatar from '../../assets/avatar.svg'
 import logout from '../../assets/logout.svg'
 import './styles.scss'
 function Menu() {
+    
     return (
         <div className='menu'>
             <div className='menu__text-header'>

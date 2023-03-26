@@ -2,9 +2,23 @@ import React from 'react'
 import Menu from '../Menu'
 import Dasboard from '../Dasboard'
 import Header from '../Header'
+import Students from '../Students'
 import './styles.scss'
-
-function Main() {
+interface page {
+    tab: number
+}
+function Main(props: page) {
+    let pages
+    switch (props.tab) {
+        case 1:
+            pages = <Dasboard />
+            break;
+        case 2:
+            pages = <Students />
+            break;
+        default:
+            break;
+    }
     return (
         <div className='main'>
             <div className='main__menu'>
@@ -15,7 +29,7 @@ function Main() {
                     <Header />
                 </div>
                 <div>
-                    <Dasboard />
+                    {pages}
                 </div>
             </div>
         </div>
